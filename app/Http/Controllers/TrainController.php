@@ -14,7 +14,7 @@ class TrainController extends Controller
      */
     public function index()
     {
-        $trains = Train::paginate(100);
+        $trains = Train::paginate(25);
 
         return view('home', compact('trains'));
     }
